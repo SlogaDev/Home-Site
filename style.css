@@ -154,4 +154,6 @@ ul, li{
 #writing{
   line-height: 1.5;
 }
-
+.round-image{
+    border-radius : 50%;
+}
