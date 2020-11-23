@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+<html>
+    
+    <head>
+
+        <title>Sloga's Place Home</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="Assets/icon_RoG_icon.ico">
+        <script src="jquery-3.5.1.slim.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <ul id="navbar">
+            <img id="logo" src="Assets/icon.jpg" height="80" width="80">
+            <li><a class="navlink" href="default.html">Home</a></li>
+            <li><a class="navlink" href="posts.html">Posts</a></li>
+            <li><a class="navlink" href="archive.html">Web Archive</a></li>
+            <li><a class="navlink" href="projects.html">Projects</a></li>
+            <li><a class="navlink" href="contact.html">Contact</a></li>
+            <li><a class="navlink" href="map.html">Map</a></li>
+          </ul> 
+          
+          <img src="Assets\cover1.jpg" class="coverimg" height="536" width="1920">
+
+          <main>
+
+            <div class="cover">
+            <h1>&mdash;  Welcome  &mdash;</h1>
+                <p>
+                    Sloga's Place is a repository of my writings and projects, also a little repository of third party web resources I use, I'll also post and discuss technologies or useful resources for development or personal anecdotes about whatever I feel like talking about.
+                    I encourage use of material on the site for your own ideas and pursuits. 
+                </p>
+            </div>
+
+            <div class="cover">
+                <h1 id="currentTime"></h1>
+                <h1 id="greeting">Hi!</h1>
+            </div>
+            
+           
+            <script>
+                var date = new Date();
+
+                $("#currentTime").text("The current time is " + date.toLocaleTimeString() + ".");
+
+                var hours = date.getHours(); 
+                
+                if(hours < 12){
+                    $("#greeting").text("Good morning!");
+                } 
+                else {
+                $("#greeting").text("Good evening!");
+                }
+            </script>
+               
+                <h2>&mdash;  Social Links &mdash;</h2>
+                <div class="cover">
+                <a href="https://twitter.com/SlogaDev" class="fa fa-twitter"></a>
+                <a href="https://www.youtube.com/channel/UCYMRUt1MCJfdAAmyvtmd2Dg?view_as=subscriber" class="fa fa-youtube"></a>
+                <a href="https://www.linkedin.com/in/aaron-spurlock-3b674a185/" class="fa fa-linkedin"></a>
+
+
+                </div>
+
+
+            
+        </main>
+
+          <footer class="site-footer">
+            <p class="footertext">@Spurlock 2020</p>
+          </footer>
+    </body>
+</html>

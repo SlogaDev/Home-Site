@@ -5,14 +5,23 @@
     height: 80px;
     margin: 0 auto;
     padding: 1px;
-    position: relative;
     clear: left;
     position: absolute;
+    overflow: hidden;
+    padding: 90px 10px;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
 
 }
+  #navbar-right {
+    float: none;
+  }
 #navbar, li{
     float: left;
-    font-size: 1.3em;
+    font-size: 1.2em;
     padding: 11px;
     font-family: 'Roboto', sans-serif;
 }
@@ -30,6 +39,7 @@
 #logo{
     float: left;
     padding-left: 0px;
+    transition: 0.4s;
 }
 li a:hover {
     background-color: #111;
@@ -40,9 +50,9 @@ body{
     background: #ddd;
 }
 main{
-    max-width: 610px;
+    max-width: 850px;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 h1 {
     text-align: center;
@@ -51,7 +61,6 @@ h1 {
     color: #333;
     letter-spacing: 1px;
     font-size: 2.1em;
-    padding: 10px;
 }
 h2 {
     text-align: center;
@@ -59,24 +68,16 @@ h2 {
     text-shadow: 1px 1px 3px #eee;
     color: #333;
     letter-spacing: 1px;
-    font-size: 1.5em;
+    font-size: 1.8em;
     padding-top: 40px;
 }
 p{
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2em;
+    font-size: 19px;
     color: #333;
     padding-top: 5px;
-    padding: 10px;
-    letter-spacing: 1px;
-}
-ul, li{
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.1em;
-  color: #333;
-  padding-top: 5px;
-  padding: 10px;
-  letter-spacing: 1px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
   .flex-center {
     display: flex;
@@ -96,7 +97,7 @@ ul, li{
   }
   .cover{
       background-color:  #e6e6e6;
-      padding: 30px;
+      padding: 20px;
       border-radius: 10px;
       font-size: 1.2em;
       text-align: center;
@@ -113,8 +114,13 @@ ul, li{
       box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   }
   .coverimg{
-      clear: both;
+      clear:both;
       padding-top: 70px;
+      max-width: 100%;
+      height: auto;
+      width: auto;
+      margin:auto;
+      display:block
   }
   .fa-twitter {
     background: #55ACEE;
@@ -154,6 +160,8 @@ ul, li{
 #writing{
   line-height: 1.5;
 }
-.round-image{
-    border-radius : 50%;
+.media
+{
+  margin: auto;
+  width: 45em;
 }
